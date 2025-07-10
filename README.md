@@ -24,7 +24,7 @@ To get a copy of the project up and running on your local machine for developmen
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/ananta-devs/responsive-signin-signup-forgot-password.git
+git clone https://github.com/ananta-devs/responsive-signin-signup-forgot-password-form.git
 ```
 
 ### Open in your browser:
