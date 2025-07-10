@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <title>Forgot Password | CureBooking</title>
+        <link rel="stylesheet" href="assets/css/forgot.css" />
+    </head>
+
+    <body>
+        <div class="container" id="container">
+            <div class="password-reset-container">
+                <div class="reset-content">
+                    <div class="progress-steps">
+                        <div class="step active" id="step1">1</div>
+                        <div class="step" id="step2">2</div>
+                        <div class="step" id="step3">3</div>
+                    </div>
+
+                    <!-- Email Request Section -->
+                    <div id="emailSection">
+                        <h1>Forgot Password</h1>
+                        <p>
+                            Enter your email address and we'll send you a
+                            verification code.
+                        </p>
+
+                        <form id="emailForm">
+                            <input
+                                type="email"
+                                id="resetEmail"
+                                placeholder="Email"
+                                required
+                            />
+                            <button type="submit" id="requestOtpBtn">
+                                Request Verification Code
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- OTP Verification Section -->
+                    <div id="otpSection" class="otp-section">
+                        <h1>Verify OTP</h1>
+                        <p class="otp-message">
+                            We've sent a verification code to your email. Please
+                            enter it below.
+                        </p>
+
+                        <form id="otpForm">
+                            <div class="otp-input-container">
+                                <input
+                                    type="text"
+                                    id="otpInput"
+                                    placeholder="Enter Verification Code"
+                                    required
+                                />
+                                <i
+                                    class="fa-solid fa-circle-check verification-icon-success"
+                                    id="verificationIconSuccess"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-circle-xmark verification-icon-error"
+                                    id="verificationIconError"
+                                ></i>
+                            </div>
+                            <button type="submit" id="verifyOtpBtn">
+                                Verify Code
+                            </button>
+                        </form>
+
+                        <p class="otp-message">
+                            Didn't receive the code?
+                            <a href="#" id="resendOtp">Resend</a>
+                        </p>
+                    </div>
+
+                    <!-- New Password Section -->
+                    <div id="newPasswordSection" class="new-password-section">
+                        <h1>Reset Password</h1>
+                        <p>Create a new secure password for your account.</p>
+
+                        <form id="newPasswordForm">
+                            <input
+                                type="password"
+                                id="newPassword"
+                                placeholder="New Password"
+                                required
+                            />
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm New Password"
+                                required
+                            />
+
+                            <div class="password-requirements">
+                                <p>Password must contain:</p>
+                                <ul>
+                                    <li id="length">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        At least 8 characters
+                                    </li>
+                                    <li id="uppercase">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        At least 1 uppercase letter
+                                    </li>
+                                    <li id="number">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        At least 1 number
+                                    </li>
+                                    <li id="special">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        At least 1 special character
+                                    </li>
+                                    <li id="match">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Passwords match
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="submit" id="resetPasswordBtn">
+                                Reset Password
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="success-message" id="successMessage">
+                        Your password has been successfully reset!
+                    </div>
+
+                    <div class="back-link">
+                        <a href="login.html" id="backToLogin"
+                            ><i class="fa-solid fa-arrow-left"></i> Back to
+                            Login</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/forgot.js"></script>
+    </body>
+</html>
