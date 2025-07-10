@@ -16,7 +16,8 @@ This project provides a responsive web interface for user authentication, includ
 * JavaScript
 
 ## Screenshots
-(Add screenshots here)
+![Sign-in Screenshot](assets/img/signin-screenshot.png)
+![Forgot Password Screenshot](assets/img/forgot-password-screenshot.png)
 
 ## Getting Started
 To get a copy of the project up and running on your local machine for development and testing purposes, follow these steps:
